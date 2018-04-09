@@ -138,7 +138,6 @@ class Profile extends Component {
         //   .then((result) => {
         //     //access the results here....
         //   });
-        console.log(email,password,address,city,phone,name);
         
       }
       

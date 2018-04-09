@@ -71,20 +71,6 @@ class Login extends Component {
       this.setState(state);
     }
       
-
-    onSubmit = (e) => {
-      e.preventDefault();
-      // get our form data out of state
-      const {  email, password } = this.state;
-
-      // axios.post('/', {  email, password })
-      //   .then((result) => {
-      //     //access the results here....
-      //   });
-      console.log(email,password);
-
-    }
-      
     onSubmit = (e) => {
       e.preventDefault();
       // get our form data out of state
@@ -94,9 +80,7 @@ class Login extends Component {
       // axios.post('/', { email, password })
       //   .then((result) => {
       //     //access the results here....
-      //   });
-      console.log(email);
-      
+      //   });      
     }
 
     render() { 
