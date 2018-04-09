@@ -116,13 +116,6 @@ class Profile extends Component {
         this.getUsersData();
       }
 
-      emailDataChange(e){
-        this.setState({email: e.target.value});
-      }
-      passwordDataChange(e){
-        this.setState({password: e.target.value});
-      }
-
       onChange = (e) => {
         const state = this.state
         state[e.target.name] = e.target.value;
@@ -132,17 +125,16 @@ class Profile extends Component {
       onSubmit = (e) => {
         e.preventDefault();
         // get our form data out of state
-        const { name, email, password, address, city, phone } = this.state;
-
-        // axios.post('/', { name, email, password, address, city, phone })
+        
+        // axios.post('/', { this.state })
         //   .then((result) => {
         //     //access the results here....
         //   });
-        
+        this.handleClose()
       }
       
     render() { 
-        const { users, name, email, password, address, city, phone } = this.state;
+        const { users } = this.state;
         const { classes } = this.props;
 
         return (
@@ -157,11 +149,11 @@ class Profile extends Component {
                                     <Paper className={classes.paper}>
                                         <Avatar className={classes.orangeAvatar}>J</Avatar>
 
-                                            <h3>{ user.userName }</h3>
-                                            <p> { user.userEmail } </p>
-                                            <p> { user.userAddress } </p>
-                                            <p> { user.userCity } </p>
-                                            <p> { user.userPhone } </p>
+                                            <h3>{ this.state.name ? this.state.name :  user.userName  }</h3>
+                                            <p> { this.state.email ? this.state.email : user.userEmail } </p>
+                                            <p> { this.state.address ? this.state.address : user.userAddress } </p>
+                                            <p> { this.state.city ? this.state.city : user.userCity } </p>
+                                            <p> { this.state.phone ? this.state.phone : user.userPhone } </p>
                                             
                                             <Button onClick={this.handleOpen} variant="raised" className={classes.button}>
                                                 Edit Profile
