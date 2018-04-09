@@ -14,7 +14,6 @@ import Menu, { MenuItem } from 'material-ui/Menu';
 import { ListItem, ListItemIcon, ListItemText } from 'material-ui/List';
 import HomeIcon from '@material-ui/icons/Home';
 import StarIcon from '@material-ui/icons/AccountBalanceWallet';
-import '../containers/App.css';
 
 const styles = {
   root: {
