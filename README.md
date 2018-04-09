@@ -39,9 +39,9 @@ Hint: running on those ports are important to ensure the app getting api.
 
 ## Built With
 
-* [React](https://reactjs.org/) - The web framework used
-* [Material UI](https://material-ui-next.com/) - Dependency Management
-* [Express](https://expressjs.com/) - Used to generate RSS Feeds
+* [React](https://reactjs.org/)
+* [Material UI](https://material-ui-next.com/)
+* [Express](https://expressjs.com/)
 
 ## Authors
 
