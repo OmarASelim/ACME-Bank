@@ -74,17 +74,15 @@ class Login extends Component {
     onSubmit = (e) => {
       e.preventDefault();
       // get our form data out of state
-      const { email,password } = this.state;
       this.props.history.push(`/home`);
 
-      // axios.post('/', { email, password })
+      // axios.post('/', { this.state })
       //   .then((result) => {
       //     //access the results here....
       //   });      
     }
 
     render() { 
-      const { users, email, password } = this.state;
       const { classes } = this.props;
 
         return (

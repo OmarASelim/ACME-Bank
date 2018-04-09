@@ -69,7 +69,7 @@ class Dashboard extends Component {
         <div className={classes.root}>
           <Grid container spacing={24}>
             { accounts.map((account, index) => (
-                <Grid item xs={12} sm={6}>
+                <Grid item xs={12} sm={6} key={index}>
                   <Paper className={classes.paper}>
                     <div key={index}>  
                       <h3>{ account.accountType }</h3>
