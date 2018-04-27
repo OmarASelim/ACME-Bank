@@ -1,6 +1,4 @@
-# Project Title
-
-ACME Bank
+# ACME Bank
 
 ## Getting Started
 
@@ -10,11 +8,11 @@ Create a Customer Portal for your client Acme Bank, using React to render the UI
 
 * NodeJS
 
-* React
+* ReactJS
 
 ### Cloning
 
-* git clone git@bitbucket.org:OmarAbdElHady/acme-bank.git
+* git clone git@github.com:omarabdel-hady/ACME-Bank.git
 
 * cd acme-bank
 
